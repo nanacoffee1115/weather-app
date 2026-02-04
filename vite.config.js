@@ -6,7 +6,7 @@ export default defineConfig({
     base: process.env.VITE_BASE_PATH || "/weather-app",
     resolve: {
         alias: {
-            '@': '/src', // optional, allows "@/components/..." imports
+            '@': '/src', // optional, makes imports like "@/components/..." work
         }
     }
 });
