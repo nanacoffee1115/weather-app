@@ -3,10 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
-    base: process.env.VITE_BASE_PATH || "/weather-app"
+    base: process.env.VITE_BASE_PATH || "/weather-app",
     resolve: {
         alias: {
-            '@': '/src', // optional, makes imports like "@/components/..." work
-        },
-    },
+            '@': '/src', // optional, allows "@/components/..." imports
+        }
+    }
 });
